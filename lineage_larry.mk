@@ -31,3 +31,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OP5958L1 \
     SystemDevice=OP5958L1 \
     SystemName=OP5958L1
+
+# In your device.mk or BoardConfig.mk
+
+# Set maintainer
+MISTOS_MAINTAINER := "Viaan Thakur"
+
+# Enable GMS with mini package
+WITH_GMS := true
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
