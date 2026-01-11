@@ -1,0 +1,18 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    override
+    class early_hal
+    user nfc
+    group nfc
+    disabled
+
+on boot && property:ro.boot.product.hardware.sku=6
+    enable vendor.nfc_hal_service
+
+on boot && property:ro.boot.product.hardware.sku=14
+    enable vendor.nfc_hal_service
