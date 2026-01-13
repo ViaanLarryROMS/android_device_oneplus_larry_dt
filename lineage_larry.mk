@@ -31,3 +31,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OP5958L1 \
     SystemDevice=OP5958L1 \
     SystemName=OP5958L1
+
+# Maintainer Name
+ORION_MAINTAINER := Viaan_Thakur
+
+# Enable/Disable GApps
+ORION_GAPPS := true
+
+# Enable/Disable Blur
+TARGET_ENABLE_BLUR := true
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
