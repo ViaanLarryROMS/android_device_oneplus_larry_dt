@@ -31,3 +31,28 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OP5958L1 \
     SystemDevice=OP5958L1 \
     SystemName=OP5958L1
+
+# Add the following variables:
+
+# Lunch banner maintainer variable
+RISING_MAINTAINER="Niv"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+# Set RISING_MAINTAINER for version control 
+# (Optional if builder is setting properties via init_<device>.cpp)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 695 5G" \
+    RisingMaintainer="Viaan_Thakur"
+
+RISING_MAINTAINER := Viaan_Thakur
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# Whether to ship aperture camera, false by default
+PRODUCT_NO_CAMERA := true
+
+# Whether to ship lawnchair launcher, false by default
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
+WITH_GMS := true
